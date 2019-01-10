@@ -1,0 +1,33 @@
+@(set: WorkoutSet)
+
+<ul>
+    <li>
+        #@set.exercise.machineNumber - @set.exercise
+    </li>
+    @if(set.exercise.seatSetting){
+    <li>
+        Seat Setting: @set.exercise.seatSetting
+    </li>
+    }
+    @if(set.exercise.rangeSetting){
+    <li>
+        Range Setting: @set.exercise.rangeSetting
+    </li>
+    }
+    <li>
+        Weight: @set.weight lbs
+    </li>
+    <li>
+        Repetitions: @set.reps
+    </li>
+    @if(set.exercise.notes){
+    <li>
+        Exercise Notes: @set.exercise.notes
+    </li>
+    }
+    @if(set.notes){
+    <li>
+        Set Notes: @set.notes
+    </li>
+    }
+</ul>

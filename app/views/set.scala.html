@@ -1,0 +1,29 @@
+@(set: Option[WorkoutSet], nextUp: Option[WorkoutSet], nextIndex: Int)
+
+@main("Welcome to Play") {
+<h1>Workout Tracker</h1>
+  <main>
+    <div>
+      <h2>This Set</h2>
+      @set match {
+        case Some(set) => { @setPartial(set) }
+        case None => { No More Sets! }
+      }
+    </div>
+    <div>
+      <h2>Next Up</h2>
+      @nextUp match {
+        case Some(nextUp) => { @setPartial(nextUp)}
+        case None => { No More Sets! }
+      }
+    </div>
+    @set match {
+      case Some(set) => {
+        <a href="/sets/@nextIndex"><button>Next Set!</button></a>
+    }
+      case (None) => {
+        <a href="/workouts/endScreen"><button>End Workout!</button></a>
+    }
+    }
+  </main>
+}
