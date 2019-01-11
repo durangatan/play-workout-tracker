@@ -11,12 +11,10 @@
       }
     </div>
     @set match {
-      case Some(set) => {
-        <a href="/sets/@nextIndex"><button>Next Set!</button></a>
-    }
-      case (None) => {
-        <a href="/workouts/endScreen"><button>End Workout!</button></a>
-    }
+        case Some(set) => {
+          <a href="/sets/@nextIndex"><button>Next Set!</button></a>
+      }
+        case None => {}
     }
     <div class="set">
       <h2>Next Up</h2>
@@ -25,5 +23,7 @@
         case None => { No More Sets! }
       }
     </div>
+    <a href="/workouts/endScreen/@(nextIndex - 1)"  ><button>End Workout!</button></a>
+
   </main>
 }

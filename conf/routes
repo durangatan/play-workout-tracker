@@ -11,4 +11,4 @@ GET     /assets/*file               controllers.Assets.versioned(path="/public",
 
 GET /sets/:id                       controllers.SetController.show(id: Int)
 
-GET /workouts/endScreen                      controllers.WorkoutController.endScreen()
+GET /workouts/endScreen/:lastSet                      controllers.WorkoutController.endScreen(lastSet: Int)
