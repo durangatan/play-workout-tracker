@@ -17,11 +17,11 @@ object EastBankClubSets {
     WorkoutSet(LegPress, 100, 12, None),
     WorkoutSet(LegPress, 100, 12, None),
 
-    WorkoutSet(HipAbduction, 90, 20, None),
+    WorkoutSet(HipAbduction, 100, 20, None),
     WorkoutSet(HipAdduction, 110, 20, None),
-    WorkoutSet(HipAbduction, 90, 20, None),
+    WorkoutSet(HipAbduction, 100, 20, None),
     WorkoutSet(HipAdduction, 110, 20, None),
-    WorkoutSet(HipAbduction, 90, 20, None),
+    WorkoutSet(HipAbduction, 100, 20, None),
     WorkoutSet(HipAdduction, 110, 20, None),
 
     WorkoutSet(ChestPress, 50, 6, Some("Warmup")),
